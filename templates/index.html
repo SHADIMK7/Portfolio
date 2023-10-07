@@ -1,0 +1,394 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MUHAMMED SHADI - PORTFOLIO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+	
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-theme1.min.css' %}" rel="stylesheet">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+  </head>
+<style>
+	/* Right Column Styles */
+.col-md-6:nth-child(2) {
+  background-color: #0073e6; /* Adjust the color to a lighter blue */
+  color: #fff; /* Text color for the right column */
+  padding: 60px; /* Increase padding to make it larger */
+  border-radius: 4px;
+}
+
+.contact-info-v1 {
+  background-color: transparent; /* Remove background color for contact details */
+  border: none; /* Remove border for contact details */
+}
+
+.contact-info-label {
+  font-weight: bold;
+  font-size:18px;
+  color: #fff; /* Label text color for contact details */
+  margin-bottom: 10px;
+}
+
+/* Default styling for contact info */
+.contact-info-label {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+
+.contact-info-val:hover {
+    text-decoration: underline;
+}
+
+
+.contact-info-val {
+    font-size: 20px; /* Adjust the font size as needed */
+    text-decoration:text-underline;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 280px) {
+    .contact-info-label {
+        font-size: 16px; /* Reduce the font size for mobile screens */
+    }
+
+    .contact-info-val {
+        font-size: 13px; /* Reduce the font size for mobile screens */
+    }
+}
+
+/* Add underline effect on hover for desktop */
+.contact-info-label:hover {
+}
+
+</style>
+  <body>
+  <div id="boxWrapp">
+    
+    <!-- Full Page Image Header Area -->
+    <div id="about" class="header" style="background-image: url('static/img/about.jpg');">
+      <div class="maskHeader"></div>
+      <div class="vert-text">
+          <div style="background-color: rgba(0, 0, 0, 0.3); padding: 10px;">
+              <h1 style="color: white;">MUHAMMED SHADI</h1>
+              <h2 style="color: white;"><b>PYTHON/DJANGO DEVELOPER</b></h2>
+          </div>
+      </div>
+      <div class="navbar-nav">
+          <a href="#aboutMore" class="btn btn-link btnAbout"><i class="fa fa-angle-down fa-2x"></i></a>
+      </div>
+  </div>
+
+
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#about">MUHAMMED SHADI</a>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav navbar-right">
+           
+            <li class="current"><a class="navbar-brand" href="#aboutMore">About</a></li>
+            <li><span>/</span></li>
+            <li><a class="navbar-brand" href="#Projects">Projects</a></li>
+            <li><span>/</span></li>
+            <li><a class="navbar-brand" href="#contact">Contact</a></li>
+          </ul>
+
+         
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+	  
+    <!-- /Full Page Image Header Area -->
+  
+    <!-- Intro -->
+    <div id="aboutMore" class="page">
+      <div class="container">
+		<div class="row">
+          <div class="col-md-10  col-md-offset-1">
+		    <div class="build title-page-white">
+				<h2 class="text-center">About Me</h2>
+				<span class="line-title"></span>
+			</div>
+		   </div><!-- end col -->
+		  </div><!-- end row -->
+		</div>
+        <div class="row">
+           <div class="col-md-10 col-md-offset-1">
+			<div class="build about-content">
+				<p class="lead gsap-reveal">Passionate software developer currently interning at RGC Dynamics PVT LTD.
+                With a Bachelor's degree in Computer Science Engineering, I possess a strong foundation in technology and
+                a fervent interest in crafting innovative solutions. My expertise lies in Python and Django for building
+                robust web applications, complemented by proficiency in HTML, CSS, and Bootstrap for creating dynamic and
+                responsive web interfaces. My skills extend to MySQL for efficient database management.</p>
+				<p class="lead gsap-reveal">I hold a Bachelor's degree in Computer Science Engineering, providing me with a
+                comprehensive understanding of the field. My commitment to continuous learning and growth, along with my
+                strong problem-solving abilities, drive my desire to contribute to cutting-edge projects and make a positive
+                impact in the world of software development.</p>
+
+				
+			</div>
+          </div><!-- end col -->
+		  
+        </div><!-- end row -->
+      </div>
+    
+    <!-- /Intro -->   
+
+    <!-- Portfolio -->
+    <div id="Projects" class="page page-bgcolor">
+      <div class="container">
+		<div class="row">
+          <div class="col-md-10  col-md-offset-1">
+		    <div class="build title-page-gray">
+				<h2 class="text-center">My Projects</h2>
+				<span class="line-title"></span>
+			</div>
+		   </div><!-- end col -->
+		  </div><!-- end row -->
+		  <div class="col-md-12">
+		  <div class="folio-content">
+		   <div class="row">
+		   <ul class="container_folio clearfix gallery">
+			<li class="box" data-id="id-2" data-type="ilustrator">
+				<div class="folio-img build">
+					<div class="portfolio-item">
+						<div class="thumbnail">
+						<div class="thumb-img">
+						<div data-gal="prettyPhoto[gallery2]" title="Python, ORB feature extraction, logistic regression"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/ecommerce.png' %}" style="height:200px;width:400px;" alt="MODIFICATION DETECTION"></div>
+						 <div class="link"><a href="#">ECOMMERCE WEBSITE</a></div>
+						<div class="folio-caption">
+					       <p>ECOMMERCE WEBSITE</p>
+					   </div>
+						</div>
+					    </div>
+					</div>
+				</div>
+			</li>
+			<li class="box" data-id="id-2" data-type="ilustrator">
+				<div class="folio-img build">
+					<div class="portfolio-item">
+						<div class="thumbnail">
+						<div class="thumb-img">
+							<div data-gal="prettyPhoto[gallery2]" title="Python, Django, HTML, CSS, MySQL"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/medical.jpeg' %}" style="height:200px;width:400px;" alt="MODIFICATION DETECTION"></div>
+						 <div class="link"><a href="#">MODIFICATION DETECTION</a></div>
+						<div class="folio-caption">
+					       <p>MODIFICATION DETECTION</p>
+					   </div>
+						</div>
+					    </div>
+					</div>
+				</div>
+			</li>
+			<li class="box" data-id="id-3" data-type="ilustrator">
+				<div class="folio-img build">
+					<div class="portfolio-item">
+						<div class="thumbnail">
+						<div class="thumb-img">
+							<div data-gal="prettyPhoto[gallery2]" title="Python, Django, HTML, CSS, MySQL"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/movie.jpg' %}" style="height:200px;width:400px;" alt="MOVIE APP"></div>
+						   <div class="link"><a href="#">MOVIE APP</a></div>
+						   <div class="folio-caption">
+					       <p>MOVIE APP</p>
+					       </div>
+					       </div>
+						</div>
+
+					</div>
+				</div>
+			</li>
+			<li class="box" data-id="id-4" data-type="ilustrator">
+				<div class="folio-img build">
+					<div class="portfolio-item">
+						<div class="thumbnail">
+						<div class="thumb-img">
+						<div data-gal="prettyPhoto[gallery2]" title="Python, HTML, CSS, PHP, JavaScript, MySQL"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/fake.png' %}" style="height:200px;width:400px;" alt="FAKE CURRENCY DETECTION"></div>
+						  <div class="link"><a href="#">FAKE CURRENCY DETECTION</a></div>
+						  <div class="folio-caption">
+					       <p>FAKE CURRENCY DETECTION</p>
+					       </div>
+					     </div>
+						</div>
+
+					</div>
+				</div>
+			</li>
+			<li class="box" data-id="id-5" data-type="mobile">
+				<div class="folio-img build">
+					<div class="portfolio-item">
+						<div class="thumbnail">
+						<div class="thumb-img">
+							<div data-gal="prettyPhoto[gallery2]" title="Python, Django, HTML, CSS, MySQL"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/TODO.jpg' %}" alt="TODO APP"></div>
+						<div class="link"><a href="#">TODO APP</a></div>
+						<div class="folio-caption">
+					       <p>TODO APP</p>
+					       </div>
+						</div>
+						</div>
+
+					</div>
+				</div>
+			</li>
+			<li class="box" data-id="id-6" data-type="mobile">
+				<div class="folio-img build">
+					<div class="portfolio-item">
+						<div class="thumbnail">
+						<div class="thumb-img">
+							<div data-gal="prettyPhoto[gallery2]" title="Python, Django, HTML, CSS"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/webscrapper.png' %}" style="height:190px;width:400px;" alt="WEB SCRAPPER"></div>
+						<div class="link"><a href="#">WEB SCRAPPER</a></div>
+						<div class="folio-caption">
+					       <p>WEB SCRAPPER</p>
+					       </div>
+						</div>
+						</div>
+
+					</div>
+				</div>
+			</li>
+		   </ul>
+		   </div>
+		  </div><!-- end folio content -->
+		  </div><!-- end col -->
+      </div><!--end container-->
+
+
+    </div>
+    <!-- /Portfolio -->
+    
+    <!--contact-->
+    <!-- Contact Section -->
+<div class="unslate_co--section" id="contact">
+  <div class="container">
+    <div class="section-heading-wrap text-center mb-5">
+      <h2 style="padding:40px;" class="heading-h2 text-center divider"><span class="gsap-reveal">Get In Touch</span></h2>
+    </div>
+
+    <div class="row justify-content-between">
+      <!-- Left Column for Send Mail Form -->
+      <div class="col-md-6">
+        <form method="POST" action="{% url 'send_email' %}">
+          {% csrf_token %}
+          <div class="form-group gsap-reveal">
+            <label for="name">Name</label>
+            <input name="name" type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group gsap-reveal">
+            <label for="email">Email</label>
+            <input name="email" type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group gsap-reveal">
+            <label for="message">Write your message...</label>
+            <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
+          </div>
+          <div class="form-group gsap-reveal">
+            <div class="d-flex align-items-center">
+              <button type="submit" class="btn btn-group-lg" style="color:black;background-color:lightblue;">Submit</button>
+              <span class="submitting"></span>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Right Column for Contact Details -->
+      <div class="col-md-6 col-sm-12" style="margin-top:1.7rem;">
+        <div class="contact-info-v1">
+            <div class="gsap-reveal d-block">
+                <span class="d-block contact-info-label">Email : </span>
+                <email class="contact-info-val">muhammedshadi.mk7@gmail.com</email>
+            </div>
+            <div class="gsap-reveal d-block">
+                <span class="d-block contact-info-label">Phone : </span>
+                <phone class="contact-info-val">+91 8547278372</phone>
+            </div>
+            <div class="gsap-reveal d-block">
+                <span class="d-block contact-info-label">Address : </span>
+                <address class="contact-info-val">Farook College, Calicut <br> Kerala, 673632</address>
+            </div>
+            <button class="btn btn-group-lg" style="background-color: lightblue;">
+                <a style="color: black;" href="{% static 'img/MUHAMMED_SHADI_RESUME.pdf' %}" download>Download my CV</a>
+            </button>
+        </div>
+    </div>
+    
+      
+    </div>
+  </div>
+</div>
+<!-- End Contact Section -->
+
+    <!--contact-->
+    
+    <!-- Footer -->
+    <footer style="margin-top:25px;" class="bg-primary">
+      <div class="container">
+        <div class="row">
+			<div class="col-md-4 ">
+				<div class="build cp-right">
+					<p>&copy; MUHAMMED SHADI</p>
+				</div><!-- end build -->
+			</div><!-- end col -->
+			<div class="col-md-4 text-center">
+			<div class=" build top-scroll">
+			<a href="#about"><i class="fa fa-angle-up scroll"></i></a>
+			</div>
+			</div>
+			<div class="col-md-4 text-right">
+			<div class="build">
+			<ul class="list-inline">
+			<li><a href="https://instagram.com/s.h_a.d.i" class="socIcon" data-toggle="tooltip" title="Instagram" data-original-title="Instagram" data-gal='tooltip' data-placement="top"><i class="fa fa-instagram fa-2x"></i></a></li>
+			<li><a href="https://twitter.com/shadimk111" class="socIcon" data-toggle="tooltip" title="Twitter" data-original-title="Twitter" data-gal='tooltip' data-placement="top"><i class="fa fa-twitter fa-2x"></i></a></li>
+			<li><a href="https://linkedin.com/in/muhammedshadi" class="socIcon" data-toggle="tooltip" title="LinkedIn" data-original-title="LinkedIn" data-gal='tooltip' data-placement="top"><i class="fa fa-linkedin fa-2x"></i></a></li>
+			<li><a href="https://github.com/SHADIMK7" class="socIcon" data-toggle="tooltip" title="GitHub" data-original-title="GitHub" data-gal='tooltip' data-placement="top"><i class="fa fa-github fa-2x"></i></a></li>
+
+
+			</ul>
+			</div>
+			</div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+   
+    <script src="{% static 'js/modernizr.js' %}"></script>
+	<script src="{% static 'js/jquery.sticky.js' %}" ></script>
+	<script src="{% static 'js/jquery.quicksand.js' %}" ></script>
+
+	 <script src="{% static 'js/jquery.nav.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollTo.js' %}" ></script>
+    
+   <script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+
+  </div>
+  </body>
+
+</html>
