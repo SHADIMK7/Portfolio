@@ -27,8 +27,8 @@
 .col-md-6:nth-child(2) {
   background-color: #0073e6; /* Adjust the color to a lighter blue */
   color: #fff; /* Text color for the right column */
-  padding: 60px; /* Increase padding to make it larger */
-  border-radius: 4px;
+  padding: 40px; /* Increase padding to make it larger */
+  border-radius: 40px;
 }
 
 .contact-info-v1 {
@@ -138,7 +138,7 @@
 		</div>
         <div class="row">
            <div class="col-md-10 col-md-offset-1">
-			<div class="build about-content">
+			<div class="build about-content" style="margin-left:1rem;margin-right:1rem;">
 				<p class="lead gsap-reveal">Passionate software developer currently interning at RGC Dynamics PVT LTD.
                 With a Bachelor's degree in Computer Science Engineering, I possess a strong foundation in technology and
                 a fervent interest in crafting innovative solutions. My expertise lies in Python and Django for building
@@ -181,7 +181,7 @@
 						<div data-gal="prettyPhoto[gallery2]" title="Python, ORB feature extraction, logistic regression"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/ecommerce.png' %}" style="height:200px;width:400px;" alt="MODIFICATION DETECTION"></div>
 						 <div class="link"><a href="#">ECOMMERCE WEBSITE</a></div>
 						<div class="folio-caption">
-					       <p>ECOMMERCE WEBSITE</p>
+					       <p style="font-size: 12px;">ECOMMERCE WEBSITE</p>
 					   </div>
 						</div>
 					    </div>
@@ -196,7 +196,7 @@
 							<div data-gal="prettyPhoto[gallery2]" title="Python, Django, HTML, CSS, MySQL"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/medical.jpeg' %}" style="height:200px;width:400px;" alt="MODIFICATION DETECTION"></div>
 						 <div class="link"><a href="#">MODIFICATION DETECTION</a></div>
 						<div class="folio-caption">
-					       <p>MODIFICATION DETECTION</p>
+					       <p style="font-size: 12px;">MODIFICATION DETECTION</p>
 					   </div>
 						</div>
 					    </div>
@@ -211,7 +211,7 @@
 							<div data-gal="prettyPhoto[gallery2]" title="Python, Django, HTML, CSS, MySQL"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/movie.jpg' %}" style="height:200px;width:400px;" alt="MOVIE APP"></div>
 						   <div class="link"><a href="#">MOVIE APP</a></div>
 						   <div class="folio-caption">
-					       <p>MOVIE APP</p>
+					       <p style="font-size: 12px;" >MOVIE APP</p>
 					       </div>
 					       </div>
 						</div>
@@ -227,7 +227,7 @@
 						<div data-gal="prettyPhoto[gallery2]" title="Python, HTML, CSS, PHP, JavaScript, MySQL"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/fake.png' %}" style="height:200px;width:400px;" alt="FAKE CURRENCY DETECTION"></div>
 						  <div class="link"><a href="#">FAKE CURRENCY DETECTION</a></div>
 						  <div class="folio-caption">
-					       <p>FAKE CURRENCY DETECTION</p>
+					       <p style="font-size: 12px;">FAKE CURRENCY DETECTION</p>
 					       </div>
 					     </div>
 						</div>
@@ -243,7 +243,7 @@
 							<div data-gal="prettyPhoto[gallery2]" title="Python, Django, HTML, CSS, MySQL"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/TODO.jpg' %}" alt="TODO APP"></div>
 						<div class="link"><a href="#">TODO APP</a></div>
 						<div class="folio-caption">
-					       <p>TODO APP</p>
+					       <p style="font-size: 12px;">TODO APP</p>
 					       </div>
 						</div>
 						</div>
@@ -257,13 +257,12 @@
 						<div class="thumbnail">
 						<div class="thumb-img">
 							<div data-gal="prettyPhoto[gallery2]" title="Python, Django, HTML, CSS"><img class="linear img-portfolio img-responsive" src="{% static 'img/portfolio/webscrapper.png' %}" style="height:190px;width:400px;" alt="WEB SCRAPPER"></div>
-						<div class="link"><a href="#">WEB SCRAPPER</a></div>
-						<div class="folio-caption">
-					       <p>WEB SCRAPPER</p>
-					       </div>
+						<div class="link"><a href="#" >WEB SCRAPPER</a></div>
+						  <div class="folio-caption">
+					      <p style="font-size: 12px;">WEB SCRAPPER</p>
+					    </div>
 						</div>
 						</div>
-
 					</div>
 				</div>
 			</li>
@@ -308,12 +307,11 @@
               <span class="submitting"></span>
             </div>
           </div>
-
         </form>
       </div>
 
       <!-- Right Column for Contact Details -->
-      <div class="col-md-6 col-sm-12" style="margin-top:1.7rem;">
+      <div class="col-md-6 col-sm-12">
         <div class="contact-info-v1">
             <div class="gsap-reveal d-block">
                 <span class="d-block contact-info-label">Email : </span>
@@ -327,12 +325,24 @@
                 <span class="d-block contact-info-label">Address : </span>
                 <address class="contact-info-val">Farook College, Calicut <br> Kerala, 673632</address>
             </div>
-            <button class="btn btn-group-lg" style="background-color: lightblue;">
-                <a style="color: black;" href="{% static 'img/MUHAMMED_SHADI_RESUME.pdf' %}" download>Download my CV</a>
-            </button>
+            <div class="gsap-reveal d-block">
+              <span class="d-block contact-info-label">GitHub:</span>
+              <a href="https://github.com/SHADIMK7" style="color:white;" class="contact-info-val">github.com/SHADIMK7</a>
+            </div>
+            <div class="gsap-reveal d-block">
+              <span class="d-block contact-info-label">LinkedIn:</span>
+              <a href="https://linkedin.com/in/muhammedshadi" style="color:white;" class="contact-info-val">linkedin.com/in/muhammedshadi</a>   
+            </div>                                 
+            <div style="margin-top: 10px;">
+              <a href="{% static 'img/MUHAMMED_SHADI_RESUME.pdf' %}" download>
+                  <button style="padding: 10px;" class="btn btn-group-lg" style="background-color: lightblue;">
+                      Download my CV
+                  </button>
+              </a>
+          </div>  
+          
         </div>
     </div>
-    
       
     </div>
   </div>

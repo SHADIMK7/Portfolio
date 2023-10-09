@@ -65,7 +65,7 @@ h3,
     background-size: cover;
     filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='static/img/about.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='static/img/about.jpg', sizingMethod='scale')";
-    position: relative;
+    position: absolute;
 }
 
 .maskHeader {
@@ -360,7 +360,7 @@ ul#filterOptions li a:hover {
     padding: 15px;
     margin: 0;
     text-align: center;
-    font-size: 18px;
+    font-size: 8px;
 }
 
 .portfolio-item {
